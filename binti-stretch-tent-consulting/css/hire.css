@@ -1,0 +1,119 @@
+/* ===================================
+   HIRE PAGE
+=================================== */
+
+.hire-hero {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f4e8 100%);
+}
+
+.hire-highlights,
+.hire-process,
+.hire-gallery,
+.quote-section {
+    background: var(--white);
+}
+
+.hire-highlights .client-card,
+.hire-process .service-card {
+    border: 1px solid rgba(107, 142, 107, 0.14);
+    border-radius: var(--radius-lg);
+}
+
+.hire-highlights .client-card p,
+.hire-process .service-card p {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.event-card {
+
+    background: var(--gray-100);
+
+    padding: 2rem;
+
+    border-radius: var(--radius-lg);
+
+    text-align: center;
+
+    transition: var(--transition-normal);
+}
+
+.event-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-md);
+}
+
+.event-card svg {
+
+    width: 42px;
+    height: 42px;
+
+    color: var(--primary);
+
+    margin-bottom: 1rem;
+}
+
+.size-card {
+
+    background: white;
+
+    border-radius: var(--radius-lg);
+
+    padding: 2rem;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-md);
+}
+
+.size-card h3 {
+
+    color: var(--primary);
+
+    margin-bottom: 1rem;
+}
+
+.quote-banner {
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 4rem 2rem;
+
+    border-radius: var(--radius-xl);
+}
+
+.quote-banner h2 {
+
+    color: white;
+
+    margin-bottom: 1rem;
+}
+
+.quote-banner p {
+
+    color: rgba(255,255,255,.9);
+
+    margin-bottom: 2rem;
+}
+
+.hire-gallery .gallery-item {
+
+    box-shadow: var(--shadow-lg);
+}
+
+.hire-gallery img {
+
+    height: 320px;
+
+    object-fit: cover;
+}

@@ -1,0 +1,338 @@
+/* ===================================
+   HEADER
+=================================== */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: var(--header-height);
+
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    transition: var(--transition-normal);
+}
+
+.header.scrolled {
+
+    box-shadow: var(--shadow-md);
+}
+
+/* ===================================
+   NAVIGATION CONTAINER
+=================================== */
+
+.nav-container {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+/* ===================================
+   LOGO
+=================================== */
+
+.logo {
+
+    font-family: var(--heading-font);
+
+    font-size: 1.2rem;
+
+    font-weight: var(--fw-bold);
+
+    color: var(--dark);
+
+    transition: var(--transition-fast);
+}
+
+.logo:hover {
+
+    color: var(--primary);
+}
+
+/* ===================================
+   NAVIGATION MENU
+=================================== */
+
+.nav-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.nav-menu a {
+
+    color: var(--dark);
+
+    font-weight: var(--fw-medium);
+
+    transition: var(--transition-fast);
+
+    position: relative;
+}
+
+.nav-menu a:hover {
+
+    color: var(--primary);
+}
+
+/* Underline Effect */
+
+.nav-menu a:not(.nav-btn)::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: var(--transition-normal);
+}
+
+.nav-menu a:not(.nav-btn):hover::after {
+
+    width: 100%;
+}
+
+/* ===================================
+   CTA BUTTON
+=================================== */
+
+.nav-btn {
+
+    background: var(--primary);
+
+    color: var(--white) !important;
+
+    padding: 0.85rem 1.5rem;
+
+    border-radius: var(--radius-full);
+
+    transition: var(--transition-normal);
+}
+
+.nav-btn:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   MOBILE BUTTON
+=================================== */
+
+.mobile-menu-btn {
+
+    display: none;
+
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border: 1px solid rgba(107, 142, 107, 0.25);
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4ef 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    color: var(--dark);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu-btn span {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 999px;
+    transform: translateX(-50%);
+    transition: var(--transition-normal);
+}
+
+.mobile-menu-btn span:nth-child(2) {
+    top: 15px;
+}
+
+.mobile-menu-btn span:nth-child(3) {
+    top: 22px;
+}
+
+.mobile-menu-btn span:nth-child(4) {
+    top: 29px;
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    transform: translateX(-50%) rotate(45deg);
+    top: 22px;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(4) {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 22px;
+}
+
+/* ===================================
+   BODY OFFSET
+=================================== */
+
+body {
+
+    padding-top: var(--header-height);
+}
+
+/* ===================================
+   FLOATING WHATSAPP BUTTON
+=================================== */
+
+.whatsapp-float {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow: var(--shadow-lg);
+
+    z-index: 999;
+
+    transition: var(--transition-normal);
+}
+
+.whatsapp-float:hover {
+
+    transform: translateY(-5px) scale(1.05);
+}
+
+.whatsapp-float svg {
+
+    width: 30px;
+    height: 30px;
+}
+
+/* ===================================
+   MOBILE NAVIGATION
+=================================== */
+
+@media (max-width: 992px) {
+
+    .mobile-menu-btn {
+
+        display: block;
+    }
+
+    .nav-menu {
+
+        position: fixed;
+
+        top: var(--header-height);
+        right: -100%;
+
+        width: 300px;
+
+        height: calc(100vh - var(--header-height));
+
+        background: white;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 2rem;
+
+        gap: 1.5rem;
+
+        box-shadow: var(--shadow-lg);
+
+        transition: 0.4s ease;
+    }
+
+    .nav-menu.active {
+
+        right: 0;
+    }
+
+    .nav-menu a {
+
+        width: 100%;
+    }
+
+    .nav-btn {
+
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+/* ===================================
+   SMALL DEVICES
+=================================== */
+
+@media (max-width: 576px) {
+
+    .logo {
+
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+
+        width: 100%;
+    }
+
+    .whatsapp-float {
+
+        width: 58px;
+        height: 58px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+}
