@@ -338,7 +338,9 @@ body {
 
     .nav-menu {
 
-        width: 100%;
+        left: 16px;
+        right: 16px;
+        width: auto;
     }
 
     .whatsapp-float {

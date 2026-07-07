@@ -149,6 +149,19 @@
         font-size: 1rem;
     }
 
+    .hero-grid,
+    .about-grid {
+        gap: 2rem;
+    }
+
+    .hero-image img {
+        height: 320px;
+    }
+
+    .about-image img {
+        max-height: 360px;
+    }
+
     .hero-buttons {
 
         flex-direction: column;
@@ -215,6 +228,15 @@
         gap: 1rem;
     }
 
+    .footer-contact {
+        gap: 0.75rem 1rem;
+    }
+
+    .footer-contact a {
+        justify-content: center;
+        text-align: center;
+    }
+
     .why-content blockquote {
 
         font-size: 1.5rem;
@@ -245,6 +267,10 @@
     .section-tag {
 
         font-size: 0.8rem;
+    }
+
+    .hero-image img {
+        height: 260px;
     }
 
     .stat-card,
