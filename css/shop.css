@@ -3,12 +3,12 @@
 =================================== */
 
 .shop-hero {
-    background: linear-gradient(135deg, #ffffff 0%, #f7f2e7 100%);
+    background: linear-gradient(135deg, #FFFDF6 0%, #F5F1E8 100%);
 }
 
 .shop-categories .package-card,
 .shop-standout .package-card {
-    border: 1px solid rgba(107, 142, 107, 0.14);
+    border: 1px solid rgba(107, 33, 79, 0.14);
 }
 
 .product-category {

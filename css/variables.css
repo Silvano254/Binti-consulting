@@ -4,25 +4,29 @@
        COLORS
     ========================= */
 
-    --primary: #5D3E6B;
-    --primary-dark: #4A2F54;
-    --primary-light: #7B5A8C;
+    --primary: #6B214F;
+    --primary-dark: #4A1838;
+    --primary-light: #8B3A61;
 
-    --secondary: #F5F1E8;
+    --secondary: #FBF7E8;
 
-    --accent: #F8D96B;
-    --accent-teal: #4A9B8E;
+    --accent: #F2D34F;
+    --accent-soft: #F8E27A;
 
-    --white: #FFFFFF;
+    --white: #FFFDF6;
+    --warm-white: #FFFDF6;
 
-    --dark: #2D1B3D;
-    --dark-light: #563A63;
+    --dark: #2D1A22;
+    --dark-light: #6A5A63;
+    --muted-text: #6A5A63;
 
-    --gray-100: #F8F8F8;
-    --gray-200: #EFEFEF;
-    --gray-300: #DDDDDD;
-    --gray-400: #BDBDBD;
-    --gray-500: #888888;
+    --border-light: #E9DDB6;
+
+    --gray-100: #FBF7E8;
+    --gray-200: #F5F1E8;
+    --gray-300: #E9DDB6;
+    --gray-400: #D4C4A8;
+    --gray-500: #8B7B6F;
 
     --success: #28A745;
     --danger: #DC3545;
