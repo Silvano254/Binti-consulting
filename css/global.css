@@ -12,6 +12,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -25,6 +26,8 @@ body {
     line-height: 1.7;
 
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -67,7 +70,7 @@ select {
 ========================= */
 
 section {
-    padding: var(--space-3xl) 0;
+    padding: 4rem 0;
 }
 
 /* =========================
@@ -114,7 +117,7 @@ p {
 
     max-width: 800px;
 
-    margin: 0 auto 4rem;
+    margin: 0 auto 2.5rem;
 }
 
 .section-heading h2 {

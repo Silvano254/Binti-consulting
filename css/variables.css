@@ -4,18 +4,19 @@
        COLORS
     ========================= */
 
-    --primary: #6B8E6B;
-    --primary-dark: #567356;
-    --primary-light: #8DAA8D;
+    --primary: #5D3E6B;
+    --primary-dark: #4A2F54;
+    --primary-light: #7B5A8C;
 
     --secondary: #F5F1E8;
 
-    --accent: #A67C52;
+    --accent: #F8D96B;
+    --accent-teal: #4A9B8E;
 
     --white: #FFFFFF;
 
-    --dark: #333333;
-    --dark-light: #555555;
+    --dark: #2D1B3D;
+    --dark-light: #563A63;
 
     --gray-100: #F8F8F8;
     --gray-200: #EFEFEF;

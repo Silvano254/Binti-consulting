@@ -40,6 +40,11 @@
         text-align: center;
     }
 
+    .about::before,
+    .about::after {
+        display: none;
+    }
+
     .hero-content {
 
         order: 2;
@@ -127,6 +132,20 @@
     :root {
 
         --space-3xl: 5rem;
+    }
+
+    .about::before {
+        width: 200px;
+        height: 200px;
+        top: -60px;
+        right: -60px;
+    }
+
+    .about::after {
+        width: 160px;
+        height: 160px;
+        bottom: -60px;
+        left: -40px;
     }
 
     h1 {
@@ -254,6 +273,12 @@
         width: 92%;
     }
 
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
     h1 {
 
         font-size: 2rem;
@@ -296,5 +321,15 @@
     .final-cta h2 {
 
         font-size: 1.8rem;
+    }
+
+    /* Additional horizontal scroll fixes */
+    section {
+        overflow-x: hidden;
+    }
+
+    .container,
+    .container * {
+        max-width: 100%;
     }
 }
