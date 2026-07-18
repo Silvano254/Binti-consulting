@@ -6,12 +6,15 @@
 
     --primary: #6B214F;
     --primary-dark: #4A1838;
-    --primary-light: #8B3A61;
+    --primary-light: #F2D34F;
 
     --secondary: #FBF7E8;
 
-    --accent: #F2D34F;
+    --accent: #6B214F;
     --accent-soft: #F8E27A;
+    --gold: #F2D34F;
+    --gold-soft: #F8E27A;
+    --gold-hover: #E7C63D;
 
     --white: #FFFDF6;
     --warm-white: #FFFDF6;
@@ -66,9 +69,9 @@
     --space-sm: 1rem;
     --space-md: 1.5rem;
     --space-lg: 2rem;
-    --space-xl: 3rem;
-    --space-2xl: 5rem;
-    --space-3xl: 7rem;
+    --space-xl: 2rem;
+    --space-2xl: 3.25rem;
+    --space-3xl: 4.5rem;
 
     /* =========================
        BORDER RADIUS
