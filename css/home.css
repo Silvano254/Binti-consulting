@@ -1326,3 +1326,9 @@
 .consultation-form {
     border: 1px solid rgba(74, 24, 56, 0.12);
 }
+
+@media (max-width: 768px) {
+    .stat-card {
+        backdrop-filter: none;
+    }
+}
