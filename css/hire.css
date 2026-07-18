@@ -347,7 +347,8 @@
 
 .color-swatches {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
 }
 
 .swatch-item {
@@ -366,16 +367,28 @@
     border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.color-dot.cream {
-    background-color: #FFFDD0;
-}
-
-.color-dot.beige {
-    background-color: #F5F5DC;
-}
-
 .color-dot.white {
     background-color: #FFFFFF;
+}
+
+.color-dot.purple {
+    background-color: #6B3FA0;
+}
+
+.color-dot.blue {
+    background-color: #2563B8;
+}
+
+.color-dot.yellow {
+    background-color: #F2D34F;
+}
+
+.color-dot.black {
+    background-color: #1D1D1D;
+}
+
+.color-dot.red {
+    background-color: #C7353D;
 }
 
 .cheese-cta-wrap {

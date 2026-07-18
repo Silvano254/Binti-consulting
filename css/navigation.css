@@ -263,3 +263,100 @@
         justify-content: center;
     }
 }
+
+/* Minimal editorial navigation */
+@media (min-width: 901px) {
+    .header {
+        top: 0;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        background: rgba(255, 253, 246, 0.96);
+        box-shadow: none;
+        border-bottom: 1px solid rgba(74, 24, 56, 0.1);
+    }
+
+    .header.scrolled {
+        background: rgba(255, 253, 246, 0.98);
+        border-color: rgba(74, 24, 56, 0.12);
+        box-shadow: 0 7px 20px rgba(45, 26, 34, 0.07);
+        transform: none;
+    }
+
+    .header .nav-container {
+        width: min(90%, var(--container-width));
+        padding-inline: 0;
+        height: 76px;
+    }
+
+    .logo {
+        gap: 0.7rem;
+    }
+
+    .logo-image {
+        height: 42px;
+    }
+
+    .brand-name {
+        display: inline-block;
+        color: var(--primary-dark);
+        font-family: var(--heading-font);
+        font-size: 1.3rem;
+        font-weight: var(--fw-bold);
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+    }
+
+    .nav-menu {
+        gap: 2.25rem;
+    }
+
+    .nav-menu a {
+        color: var(--dark-light);
+        font-size: 0.9rem;
+        font-weight: var(--fw-semibold);
+        letter-spacing: 0.01em;
+    }
+
+    .nav-menu a:not(.nav-btn)::after {
+        bottom: -10px;
+        height: 1px;
+        background: var(--gold);
+    }
+
+    .nav-menu a:not(.nav-btn):hover {
+        color: var(--primary-dark);
+    }
+
+    .nav-menu .nav-btn {
+        padding: 0.72rem 1.1rem;
+        border-radius: var(--radius-sm);
+        background: var(--primary-dark);
+        box-shadow: none;
+    }
+
+    .nav-menu .nav-btn:hover {
+        background: var(--accent);
+        box-shadow: 0 8px 18px rgba(74, 24, 56, 0.16);
+        transform: translateY(-1px);
+    }
+}
+
+@media (max-width: 900px) {
+    .logo {
+        gap: 0.6rem;
+    }
+
+    .brand-name {
+        color: var(--primary-dark);
+        font-family: var(--heading-font);
+        font-size: 1.15rem;
+        font-weight: var(--fw-bold);
+        white-space: nowrap;
+    }
+
+    .logo-image {
+        height: 40px;
+    }
+}

@@ -446,6 +446,36 @@ svg {
     background: var(--accent-soft);
 }
 
+/* Accessible interaction and consistent anchored navigation. */
+html {
+    scroll-padding-top: 110px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
+
+.form-intro {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 /* =========================
    FLOATING WHATSAPP BUTTON
 ========================= */

@@ -8,7 +8,6 @@ forms.forEach((form) => {
             window.BintiWhatsApp.openWhatsApp(form);
         }
 
-        form.reset();
     });
 });
 
